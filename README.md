@@ -1,4 +1,5 @@
 # AR Campus Tour
+### Group Members: Rohail ahmad, Muhammad Shahzaib, Shomail
 
 An interactive **Web-based Augmented Reality (AR) Campus Tour** built using **8th Wall WebAR** and **A-Frame**.  
 The application allows users to explore a university campus through AR markers, guided navigation, and interactive information panels.
@@ -151,7 +152,7 @@ This video highlights multiple interaction methods, AR object manipulation, real
 ## 👨‍🎓 Author
 
 **Rohail Ahmad**  
-Semester Project – XR / AR Development
+Semester Project – Virtual and Augmented Reality
 
 ---
 
