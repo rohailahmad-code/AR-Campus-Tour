@@ -124,6 +124,22 @@ This enables accurate placement of AR content in the real world.
 
 ---
 
+## 🎥 Demo Video Description 
+
+This video demonstrates the functionality of the AR Campus Tour application built using 8th Wall WebAR and A-Frame.
+
+The demo begins by launching the web-based AR experience on a mobile device, where the system scans the surrounding environment and initializes augmented reality tracking.
+
+Virtual AR markers representing different campus locations appear in the real world. The user interacts with these markers by tapping on them, which opens an information panel displaying the location name, descriptive text, and an image related to that campus area.
+
+The video showcases guided navigation through the tour using on-screen UI controls such as Start Tour, Next Spot, and Restart. A directional arrow helps guide the user to the next unvisited location, while a progress indicator tracks how many locations have been visited.
+
+Additional features demonstrated include background ambient audio with mute/unmute functionality, a help and instruction overlay for user guidance, and a tour completion screen that appears after all locations have been visited.
+
+The demo was recorded indoors due to lighting conditions; however, the application is designed for outdoor campus usage during daylight for optimal AR tracking.
+
+This video highlights multiple interaction methods, AR object manipulation, real-world integration, and a complete user experience flow, fulfilling the requirements of an XR semester project.
+
 ## 📝 Notes
 
 - The demo video was recorded indoors / in low-light conditions.
