@@ -137,6 +137,17 @@ PASTE YOUR DEMO VIDEO LINK HERE
 ## 📂 Repository Structure
 
 
+AR-Campus-Tour/
+├── app.js
+├── body.html
+├── head.html
+├── main.css
+├── assets/
+│ ├── images/
+│ ├── models/
+│ └── atmosphere.mp3
+└── README.md
+
 ---
 
 ## 📝 Notes
