@@ -1,0 +1,114 @@
+<body>
+  <a-scene xrweb xrextras-loading xrextras-runtime-error renderer="colorManagement: true">
+    <a-assets>
+      <!-- Images -->
+      <img id="imgGate" src="assets/images/maingate.jpg" />
+      <img id="imgCafe" src="assets/images/cafeteria.jpg" />
+      <img id="imgLibrary" src="assets/images/Library.jpg" />
+      <img id="imgAcademic" src="assets/images/AcademicBlocks.jpg" />
+      <img id="imgMedical" src="assets/images/MedicalLab.jpg" />
+      <img id="imgOutdoor" src="assets/images/OutsideSettingArea.jpg" />
+
+      <!-- Models -->
+      <a-asset-item id="markerModel" src="assets/models/marker.glb"></a-asset-item>
+      <a-asset-item id="arrowModel" src="assets/models/arrow.glb"></a-asset-item>
+
+      <!-- Background music -->
+      <audio id="bgm" src="assets/atmosphere.mp3" preload="auto" loop="true"></audio>
+    </a-assets>
+
+    <!-- Camera -->
+    <a-camera id="camera" position="0 1.6 0"></a-camera>
+
+    <!-- Tap/click cursor -->
+    <a-entity id="cursor" cursor="rayOrigin: mouse" raycaster="objects: .clickable"></a-entity>
+
+    <!-- Info panel -->
+    <a-entity id="infoPanel" visible="false" position="0 1.6 -1.8">
+      <a-plane width="1.4" height="0.9" color="#111111" opacity="0.85" radius="0.1"></a-plane>
+
+      <a-text
+        id="panelTitle"
+        value=""
+        width="1.3"
+        position="-0.65 0.3 0.01"
+        color="#00ffea"
+        wrap-count="26"></a-text>
+
+      <a-text
+        id="panelDesc"
+        value=""
+        width="1.3"
+        position="-0.65 0.05 0.01"
+        color="#ffffff"
+        wrap-count="30"></a-text>
+
+      <a-image
+        id="panelImg"
+        width="1.2"
+        height="0.45"
+        position="0 -0.3 0.01"
+        material="shader: flat"></a-image>
+    </a-entity>
+
+    <!-- Marker container -->
+    <a-entity id="markers"></a-entity>
+
+    <!-- Logic -->
+    <a-entity campus-tour></a-entity>
+  </a-scene>
+
+  <!-- UI -->
+  <div class="app-title">AR Campus Tour</div>
+  <div class="progress-chip" id="progressChip">Visited 0/3</div>
+
+  <div class="ui">
+    <button id="startTourBtn">Start Tour</button>
+    <button id="nextBtn">Next Spot</button>
+    <button id="restartBtn">Restart</button>
+  </div>
+
+  <!-- Mute button -->
+  <button id="muteBtn" class="mute-btn" aria-label="Toggle music">🔊</button>
+
+  <!-- Help button -->
+  <button id="helpFab" class="fab" aria-label="Help">?</button>
+
+  <!-- Welcome overlay -->
+  <div id="welcomeOverlay" class="overlay">
+    <div class="overlay-card">
+      <h1>Welcome to AR Campus Tour</h1>
+      <p>
+        Move your phone to scan the area, then
+        <strong>tap the red markers</strong> or arrows to visit each campus location.
+      </p>
+      <p class="hint">Click the <strong>red marker</strong> to visit the location.</p>
+      <button id="beginBtn" class="primary-btn">Start AR Tour</button>
+    </div>
+  </div>
+
+  <!-- Instructions overlay -->
+  <div id="instructionsPanel" class="overlay overlay-small hidden">
+    <div class="overlay-card">
+      <h2>How to use</h2>
+      <ul>
+        <li>Move your phone to scan the environment.</li>
+        <li>Tap a <strong>red marker</strong> or arrow to open details.</li>
+        <li>Use <strong>Next Spot</strong> to visit the next location.</li>
+        <li>Use <strong>Restart</strong> to close the info panel.</li>
+        <li>Use 🔊 / 🔇 to mute/unmute background music.</li>
+      </ul>
+      <button id="closeInstructions" class="secondary-btn">Close</button>
+    </div>
+  </div>
+
+  <!-- Tour Complete overlay -->
+  <div id="tourCompleteOverlay" class="overlay hidden">
+    <div class="overlay-card">
+      <h1>🎉 Tour Completed!</h1>
+      <p>You visited all locations. Great job!</p>
+      <button id="completeRestartBtn" class="primary-btn">Restart Tour</button>
+      <button id="completeCloseBtn" class="secondary-btn">Close</button>
+    </div>
+  </div>
+</body>
