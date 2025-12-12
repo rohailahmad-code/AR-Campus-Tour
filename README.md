@@ -106,11 +106,10 @@ The application supports **multiple interaction types**:
 
 ---
 
-## 🤖 AI / Computer Vision Usage
+## Computer Vision Usage
 
 The application uses **SLAM-based world tracking and surface detection** provided by 8th Wall, which relies on:
 - Computer vision
-- Environment understanding
 - Device pose estimation
 
 This enables accurate placement of AR content in the real world.
@@ -122,31 +121,6 @@ This enables accurate placement of AR content in the real world.
 - Built on **WebXR**
 - Runs on modern mobile browsers
 - Cross-platform (Android & iOS compatible)
-
----
-
-## 🎥 Demo Video
-
-▶️ **Demo Video Link:**  
-PASTE YOUR DEMO VIDEO LINK HERE
-
-(Video duration: ≥ 60 seconds)
-
----
-
-## 📂 Repository Structure
-
-
-AR-Campus-Tour/
-├── app.js
-├── body.html
-├── head.html
-├── main.css
-├── assets/
-│ ├── images/
-│ ├── models/
-│ └── atmosphere.mp3
-└── README.md
 
 ---
 
@@ -164,12 +138,5 @@ AR-Campus-Tour/
 Semester Project – XR / AR Development
 
 ---
-
-## ✅ Project Status
-
-✔ Fully implemented  
-✔ Meets all MUST requirements  
-✔ Meets SHOULD requirements  
-✔ Includes additional features beyond minimum scope  
 
 
