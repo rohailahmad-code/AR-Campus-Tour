@@ -136,3 +136,29 @@ PASTE YOUR DEMO VIDEO LINK HERE
 
 ## 📂 Repository Structure
 
+
+---
+
+## 📝 Notes
+
+- The demo video was recorded indoors / in low-light conditions.
+- For best AR tracking results, the application is intended to be used outdoors in daylight.
+- The project was developed and tested on mobile devices.
+
+---
+
+## 👨‍🎓 Author
+
+**Rohail Ahmad**  
+Semester Project – XR / AR Development
+
+---
+
+## ✅ Project Status
+
+✔ Fully implemented  
+✔ Meets all MUST requirements  
+✔ Meets SHOULD requirements  
+✔ Includes additional features beyond minimum scope  
+
+
